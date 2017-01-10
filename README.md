@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+React练习总结
+======
+准备工作
+---
+> ###包的下载  
 
-You can use the [editor on GitHub](https://github.com/YangXiaochun-admin/myReact/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+  1. ####创建项目
+  
+  2. ####在项目下生成packjson文件
+   `npm init`
+   注意：生成的package包把文件中的name不能和包的名称一样，否则会认为当前的文件就是某个包，在npm下载该name包的时候会出错
+   
+   3. ####下载react、react-dom依赖 
+   `npm install  react react-dom --save`
+   
+   4. ####下载babel
+       * `npm install babel-standalone --save`
+       * 也可以通过远程地址引入该包
+       
+       
+-----
+       
+React特点
+-------
+1. JSX                —— 使用简单快速
+2. 单向数据流          —— 绑定数据简单
+3. 虚拟DOM            —— 加快运行效率
+4. 组件化开发          —— 代码易复用
+5. 能够引入外部插件     —— 使用起来灵活方便
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+----
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/YangXiaochun-admin/myReact/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+注意事项
+----
+1. 类名首字母必须大写
+2. 渲染的组件必须有且只有一个根元素
